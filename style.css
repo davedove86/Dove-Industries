@@ -367,6 +367,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 7rem;
 }
 
 .logo {
@@ -375,4 +384,47 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 72px 0;
+}
+
+.card {
+  background-color: #203A40;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card img {
+  max-height: 100px;
+}
+
+.card h3 {
+  margin: 16px 0;
+  font-size: 1.5rem;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid #89ddff;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+  h2 {
+    font-size: 4rem;
+  }
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
